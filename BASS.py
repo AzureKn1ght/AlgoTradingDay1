@@ -78,6 +78,7 @@ class BASS_Calc(QCAlgorithm):
         self.Debug('TSLA Alpha: {}'.format(TSLA_alpha))
         
         # TSLA Sharpe
-        TSLA_SR = tsla_daily_ret / tsla_std * (252**0.5)
+        TSLA_SR = tsla_daily_ret / tsla_std * (252**0.5) 
+        # calculate using daily values then convert to annual root252
         self.Debug('TSLA Sharpe Ratio: {}'.format(TSLA_SR))
         
